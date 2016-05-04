@@ -12,7 +12,6 @@ RUN wget http://www-eu.apache.org/dist/karaf/${KARAF_VERSION}/apache-karaf-${KAR
     mkdir /opt/deploy; \
     rm -rf /opt/karaf/deploy; \
     ln -s /opt/deploy /opt/karaf/deploy
-    #sed -i 's/^\(felix\.fileinstall\.dir\s*=\s*\).*$/\1\/deploy/' /opt/karaf/etc/org.apache.felix.fileinstall-deploy.cfg
 
 VOLUME ["/opt/deploy"]
 EXPOSE 1099 8101 44444
