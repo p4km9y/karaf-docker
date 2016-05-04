@@ -2,7 +2,7 @@ FROM java:openjdk-8
 MAINTAINER p4km9y
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
-ENV KARAF_VERSION 4.0.4
+ENV KARAF_VERSION 4.0.5
 ENV JAVA_MAX_MEM 256m
 
 RUN wget http://www-eu.apache.org/dist/karaf/${KARAF_VERSION}/apache-karaf-${KARAF_VERSION}.tar.gz; \
